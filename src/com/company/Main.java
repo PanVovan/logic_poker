@@ -18,12 +18,16 @@ public class Main {
                 .addCommunityCard(Optional.of(new Card(107)))
                 .addCommunityCard(Optional.of(new Card(414)))
                 .addCommunityCard(Optional.of(new Card(407)))
-                .addHoleCard(Optional.of(new Card(103)))
-                .addHoleCard(Optional.of(new Card(203)));
+                .addHoleCard(Optional.of(new Card(114)))
+                .addHoleCard(Optional.of(new Card(207)));
 
         Hand hand = new Hand(builder);
 
         System.out.println(HandClassifier.classifyPokerHand(hand.getCombinedCards()).toString());
+
+        HandClassifier handClassifier = new HandClassifier();
+        handClassifier.setClassificationPower(hand.getCombinedCards());
+        System.out.println(handClassifier.getClassificationPower());
 
     }
 }

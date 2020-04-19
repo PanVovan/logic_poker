@@ -7,7 +7,7 @@ import com.company.card.Suit;
 import java.util.Arrays;
 import java.util.List;
 
-public class PokerHandUtils {
+public class Straights {
     public static final List<Card> ROYAL_FLUSH_SPADES = Arrays.asList(new Card(Rank.ACE, Suit.SPADES),
             new Card(Rank.KING, Suit.SPADES),
             new Card(Rank.QUEEN, Suit.SPADES),
